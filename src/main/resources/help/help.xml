@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infla>
+	<uri paramt="uri">
+		<defaultmMdel> 
+			<uri-http>${site}:${port}/pressure/0/encodeUri</uri-http>
+			<uri-https>${site}:${port}/pressure/1/encodeUri</uri-https>
+		 </defaultmMdel>
+		 <AppointModel> 
+			<uri>${site}:${port}/pressure/encodeUri/appointNum</uri>
+		 </AppointModel>
+	</uri>
+	<sql paramt="datasources">
+		<defaultmMdel> 
+			<uri>${site}:${port}/pressure/encodeDdatabaseJDBC/u{userName}/p{passWord}</uri>
+		 </defaultmMdel>
+		 <AppointModel> 
+			<uri>${site}:${port}/pressure/encodeDdatabaseJDBC/u{userName}/p{passWord}/appointNum</uri>
+		 </AppointModel>
+	</sql>
+</infla>
